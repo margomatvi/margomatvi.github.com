@@ -1,0 +1,446 @@
+@font-face {
+    font-family: 'Patsy';
+    src: url("fonts/PatsySans.otf")
+}
+
+@font-face {
+    font-family: 'futurealight';
+    src: url("fonts/futura\ light\ bt.ttf")
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+    color: #080808;
+    font-family: 'futuralight', sans-serif;
+}
+
+#spacing {
+    display: flex;
+    height: 150px;
+}
+
+/* Navigatiebalk en logo */
+.navbackground {
+    z-index: 1;
+    margin-top: -130px;
+    position: fixed;
+    width: 100%;
+}
+
+.navbackground img {
+    width: 100%;
+    height: 460px;
+}
+
+.see {
+    position: fixed;
+    z-index: -1;
+    width: auto;
+    height: auto;
+    margin-top: -50px;
+    transition: 0.5s;
+}
+
+.see.is-active {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    align-items: center !important;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: background-color 0.4s ease-in-out;
+    font-family: 'patsy', sans-serif;
+    z-index: 2;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.navbar.is-active {
+    background-color: black;
+    width: 100%;
+    display: flex !important;
+    position: fixed;
+    top: 0;
+    align-items: center !important;
+    justify-content: space-between;
+    flex-direction: column;
+    transition: background-color 0.4s ease-in-out;
+    font-family: 'patsy', sans-serif;
+    z-index: 2;
+    padding-bottom: 10px;
+    transition: 0.5s;
+}
+
+.logo {
+    width: 400px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+    transition: 0.5s;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    display: inline-block !important;
+    list-style: none;
+    margin: 10px 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+nav ul li a {
+    color: #A3B5C1;
+    text-decoration: none;
+    font-size: 18px;
+    transition: .3s;
+    letter-spacing: 3px;
+}
+
+nav ul li a:hover,
+nav a.active {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+}
+
+/* Hamburger menu */
+.hamburger {
+    position: relative;
+    display: none;
+    width: 35px;
+    cursor: pointer;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    margin-top: -10px;
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: #A3B5C1;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+
+.hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+}
+
+.hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+
+.hamburger.is-active .bar {
+    opacity: 0;
+}
+
+/* Mobiele navigatie */
+.navbarcheck {
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: none;
+    align-items: center !important;
+    flex-direction: column;
+    transition: 0.4s;
+}
+
+.navbarcheck.is-active {
+    display: flex;
+}
+
+.navbarcheck ul {
+    margin-top: 190px;
+}
+
+.navbarcheck ul li{
+    list-style: none;
+    margin: 10px 20px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Patsy';
+}
+
+.navbarcheck ul li a{
+    color: #A3B5C1;
+    text-decoration: none;	
+    font-size: 30px;
+    transition: .3s;
+    letter-spacing: 3px;
+}
+   
+  .navbarcheck ul li a:hover,
+  .navbarcheck a.active{
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 3px;
+  }
+
+/* Media queries */
+@media only screen and (max-width: 1048px) {
+    nav ul {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+}
+
+
+
+.testing{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-bottom: 20px;
+}
+
+
+.text1{
+    margin-left: -170px;
+    font-family: 'futurealight'!important;
+    font-size: 24px;
+    grid-row: 1;
+}
+
+.text2{
+    text-align: right;
+    grid-row: 2;
+    margin-right: 40px;
+    font-size: 24px;
+    font-family: 'futurealight'!important;
+}
+
+.test1{
+    grid-row: 1/3;
+}
+
+.test2{
+    grid-row: 1/3;
+    max-width: 379px;
+    grid-column: 3;
+    margin-right: 60px;
+}
+
+
+.illustrations{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around !important;
+}
+
+.ill1{
+    max-width:236px;
+}
+
+.ill2{
+    max-width:236px;
+}
+
+.ill3{
+    max-width:236px;
+}
+
+.ill4{
+    max-width:236px;
+}
+
+.ill5{
+    max-width:236px;
+}
+
+.header{
+    font-size: 24px;
+    font-family: 'futurealight';
+    display:grid;
+    justify-content:center;
+    margin-bottom: 50px;
+}
+.text1hide{
+    display: none;
+}
+.text2hide{
+    display: none;
+}
+
+
+.footer{
+    margin-left: 23px;
+    margin-right: 23px;
+    font-family: 'Patsy' !important;
+    font-size: 20px !important;
+    letter-spacing: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 60px;
+    margin-bottom: 30px;
+}
+
+.test11{
+    grid-column: 1;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+}
+
+.f1{
+    grid-area: 1 / 1;
+}
+.f1t{
+    grid-area: 1 / 1;
+}
+.f1th{
+    grid-area: 1 / 1;
+    display: none;
+}
+
+.test22{
+    grid-column: 3;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    place-items: center;
+    justify-self: right;
+}
+
+.f2{
+    grid-area: 1 / 1;
+}
+.f2t{
+    grid-area: 1 / 1;
+}
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1330px) {
+    .test2{
+        width: 270px;
+    }
+    .test1{
+        width: 379px;
+    }
+    .ill1{ 
+        width: 90%;
+    }
+    .ill2{
+        width: 90%;
+    }
+    .ill3{
+        width: 90%;
+    }
+    .ill4{
+        width: 90%;
+    }
+    .ill5{
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 960px) {
+    .testing{
+        display: grid;
+        grid-template-columns: 1fr 1fr !important;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px;
+    }
+    .test1{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .test2{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .text1{
+        grid-column: 2;
+        grid-row: 1;
+        text-align: right;
+    }
+    .text2{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .f1{
+        width: 150px;
+    }
+    .f1t{
+        display: none;
+    }
+    .f1th{
+        display:flex;
+    }
+    .f2{
+        width: 170px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .testing{
+        display: grid;
+        grid-template-columns: 50% 50% !important;
+        grid-template-rows: 1fr 1fr;
+        margin: 10px;
+    }
+    .test2{
+        width: 200px;
+        align-content: right;
+        margin-right: 0px;
+    }
+    .text2{
+        display: none;
+    }
+    .text2hide{
+        display: block;
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 24px;
+        font-family: 'futurealight'!important;
+    }
+    .test1{
+        grid-column: 1;
+        grid-row: 1;
+        width: 220px;
+    }
+    .text1{
+        display: none;
+    }
+    .text1hide{
+        display: block;
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 24px;
+        font-family: 'futurealight'!important;
+        text-align: right;
+    }
+}
+
+.header{
+    font-family: patsy;
+    text-align: center;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Margo Portfolio</title>
+        <link rel="stylesheet" href="illustration.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    </head>
+        <nav id="navbar">
+            <img src="images/Asset_2.png" class="logo">
+                <img src="images/Group 1.png" class="see">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="graphic-design.html">GRAPHIC DESIGN</a></li>
+                <li><a href="photography.html">PHOTOGRAPHY</a></li>
+                <li><a href="#" class="active">ILLUSTRATION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">RESUME</a></li>
+            </ul><button class="hamburger">
+                <div class="bar">
+                <div class="bar">
+                <div class="bar">
+                </div>
+            </div>
+        </nav>
+        <div id="spacing"></div>
+        <div class="navbarcheck">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="graphic-design.html">GRAPHIC DESIGN</a></li>
+                <li><a href="photography.html">PHOTOGRAPHY</a></li>
+                <li><a href="#" class="active">ILLUSTRATION</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">RESUME</a></li>
+            </ul>
+        </div>
+        <div id="spacing"></div>
+    <body>
+      <div class="testing">
+        <img class="test1" src="images/stickers.png">
+            <p class="text1">I really enjoy doing illustrations.<br>
+                I worked mostly on my <br>
+                Original Character - Sasha Bolacha </p>
+                <p class="text1hide">I really enjoy doing illustrations. I worked mostly on my Original Character - Sasha Bolacha </p>
+            <p class="text2">For me, it is always more <br>
+               interesting when something <br>
+               has illustrations, so i always <br>
+               try to implement that in my <br>
+               multimedia projects</p>
+            <p class="text2hide">For me, it is always more interesting when something has illustrations, so i always try to implement that in my multimedia projects</p>
+        <img class="test2" src="images/Cartaz dinamarca.jpg">
+      </div>  
+      <div class="illustrations">
+        <img class="ill1" src="images/ill1.png">
+        <img class="ill2" src="images/ill2.png">
+        <img class="ill3" src="images/ill3.png">
+        <img class="ill4" src="images/ill4.png">
+        <img class="ill5" src="images/ill5.jpg">
+    </div>
+    <br>
+    <h1 class="header">Contact me for personalized illustrations! :)</h1>
+    <div class="footer">
+        <div class="test11">
+        <img class="f1" src="images/footer 1.svg">
+        <a href="mailto: margo.matviychuk@gmail.com" class="f1t">margo.matviychuk@gmail.com</a>
+        <a href="mailto: margo.matviychuk@gmail.com" class="f1th">Mail</a>
+        </div><div class="test22">
+        <img class="f2" src="images/footer 2.svg">
+        <a href="https://www.instagram.com/margomatvi/" class="f2t">instagram</a></div>
+    </div>
+    </body>
+    <script>
+            const menu_btn = document.querySelector('.hamburger');
+const mobile_menu = document.querySelector('.navbarcheck');
+const navimg = document.querySelector('.see');
+const navbar = document.getElementById('navbar');
+const imgsize = document.querySelector('.logo');
+
+menu_btn.addEventListener('click', function () {
+    menu_btn.classList.toggle('is-active');
+    mobile_menu.classList.toggle('is-active');
+    navimg.classList.toggle('is-active');
+    navbar.classList.toggle('is-active');
+});
+
+var lastScrollTop = 0;
+window.addEventListener("scroll", function() {
+    // Check if the hamburger menu is active
+    if (mobile_menu.classList.contains('is-active')) {
+        return; // Do nothing if the mobile menu is active
+    }
+
+    var scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    if (scrollTop > lastScrollTop) {
+        imgsize.style.opacity = "0.0";
+        imgsize.style.width = "0px";
+        navimg.style.top = "-150px";
+        navbar.style.top = "-35px";
+    } else {
+        navbar.style.top = "0";
+        imgsize.style.opacity = "1.0";
+        imgsize.style.width = "400px";
+        navimg.style.top = "0";
+    }
+    lastScrollTop = scrollTop;
+}); 
+        </script> 
+        </body>
+</html>
