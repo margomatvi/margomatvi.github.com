@@ -361,3 +361,11 @@ a{
         width: 170px;
     }
 }
+
+.minitext {
+    font-family: 'futurealight';
+    text-align: center;
+    margin-bottom: -20px;
+    font-size: 18px;
+    margin-top: -6px;
+}
