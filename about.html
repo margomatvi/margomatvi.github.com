@@ -109,6 +109,8 @@ const mobile_menu = document.querySelector('.navbarcheck');
 const navimg = document.querySelector('.see');
 const navbar = document.getElementById('navbar');
 const imgsize = document.querySelector('.logo');
+const spacing = document.querySelector('#spacing');
+
 
 menu_btn.addEventListener('click', function () {
     menu_btn.classList.toggle('is-active');
@@ -130,11 +132,13 @@ window.addEventListener("scroll", function() {
         imgsize.style.width = "0px";
         navimg.style.top = "-150px";
         navbar.style.top = "-35px";
+        spacing.style.height = "170px";
     } else {
         navbar.style.top = "0";
         imgsize.style.opacity = "1.0";
         imgsize.style.width = "400px";
         navimg.style.top = "0";
+        spacing.style.height = "320px";
     }
     lastScrollTop = scrollTop;
 });
