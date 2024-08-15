@@ -427,6 +427,9 @@ a{
     .margoimg{
         width: 300px;
     }
+    .logo {
+        width: 80% !important;
+    }
     .askid{
         grid-row: 4 !important;
         display: grid;
