@@ -79,6 +79,7 @@ nav.scrolled{
     width: 400px;
     margin-bottom: 20px;
     margin-top: 40px;
+    transition: 0.5s;
 }
 
 nav ul li{
