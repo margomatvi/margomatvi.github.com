@@ -398,6 +398,9 @@ a{
     .f2{
         width: 170px;
     }
+    .logo{
+        width: 80% !important;
+    }
 }
 
 @media only screen and (max-width: 660px) {
