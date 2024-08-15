@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Margo Portfolio</title>
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="swiper-bundle.min.css">
     </head>
     <nav>
         <img src="images/Asset_2.png" class="logo">
@@ -57,6 +58,75 @@
     </div>
 </div>
 
+
+<h1 class="Recents">RECENT PROJECTS</h1>
+<div class="wrapped">
+    <div class="slide-container swiper">
+        <div class="slide-content">
+            <div class="card-wrapper swiper-wrapper">
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/Workable.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Asitique</h2>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iste modi quidem id, quia accusantium delectus repudiandae perferendis itaque earum et distinctio quod, ad voluptate animi quibusdam necessitatibus hic error.</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/Workable.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Falck</h2>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iste modi quidem id, quia accusantium delectus repudiandae perferendis itaque earum et distinctio quod, ad voluptate animi quibusdam necessitatibus hic error.</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+                        <span class="overlay"></span>
+
+                        <div class="card-image">
+                            <img src="images/Workable.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">Video Editing</h2>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iste modi quidem id, quia accusantium delectus repudiandae perferendis itaque earum et distinctio quod, ad voluptate animi quibusdam necessitatibus hic error.</p>
+                    </div>
+                </div>
+                <div class="card swiper-slide">
+                    <div class="image-content">
+
+                        <div class="card-image">
+                            <img src="images/Workable.jpg" alt="" class="card-img">
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h2 class="name">CYM</h2>
+                        <p class="description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime iste modi quidem id, quia accusantium delectus repudiandae perferendis itaque earum et distinctio quod, ad voluptate animi quibusdam necessitatibus hic error.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+    </div>
+</div>
+
 <div class="footer">
     <div class="test1">
     <img class="f1" src="images/footer 1.svg">
@@ -84,5 +154,33 @@
             menu_btn.classList.toggle('is-active');
             mobile_menu.classList.toggle('is-active');
         })
-    </script>    
+
+    </script>   
+    <script src="swiper-bundle.min.js"></script> 
+
+    <script>
+         var swiper = new Swiper(".slide-content", {
+            slidesPerView: 3,
+            spaceBetween: 40,
+            slidesPerGroup: 1,
+            loop: false,
+            loopFillGroupWithBlank: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+
+            breakpoints:{
+                0: {
+                    slidesPerView: 1,
+                },
+                520: {
+                    slidesPerView: 2,
+                },
+                950: {
+                    slidesPerView: 3,
+                },
+            },
+         });
+    </script>
 </html>
