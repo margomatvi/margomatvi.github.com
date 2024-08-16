@@ -200,6 +200,7 @@ nav a.active {
 #spacing {
     display: flex;
     height: 320px;
+    transition: .5s;
 }
 
 
