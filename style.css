@@ -18,6 +18,7 @@ body {
     background: #fff;
     color: #080808;
     font-family: 'futuralight', sans-serif;
+    cursor: url(images/backg.png), auto;
 }
 
 .bgimage {
@@ -423,7 +424,7 @@ a{
 
 .card{
     border-radius: 25px;
-    background-color: #e1d6b2;
+    background-color: #97B2DE;
 }
 
 
@@ -454,15 +455,18 @@ a{
     padding-top: 10px;
     margin-bottom: 5px;
     color: #000;
+    font-weight: 500;
+    align-self: left !important;
 }
 
 .card-content p {
     font-family: 'futurealight';
-    font-size: 17px;
-    color: #4d4d4d;
-    padding-bottom: 8px;
-    padding-left: 5px;
-    padding-right: 5px;
+    font-size: 15px;
+    color: #343434;
+    padding-bottom: 18px;
+    padding-left: 15px;
+    padding-right: 15px;
+    text-align:justify;
 }
 
 .card-image{
@@ -477,7 +481,9 @@ a{
     border-radius: 25px 25px 0 0;
 }
 
-
+.swiper{
+    z-index: 0 !important;
+}
 
 .description{
     font-size: 14px;
@@ -486,12 +492,12 @@ a{
 }
 
 .swiper-navBtn {
-    color: #6E93f7;
+    color: #6b6f7b !important;
     transition: color 0.3s ease;
 }
 
 .swiper-navBtn:hover {
-    color: #4070F4;
+    color: #7c808e;
 }
 
 .swiper-navBtn:before,
