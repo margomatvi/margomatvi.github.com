@@ -11,21 +11,16 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: 'Patsy', sans-serif;
     box-sizing: border-box;
 }
 
 body {
     background: #fff;
     color: #080808;
-    font-family: 'futuralight', sans-serif;
 }
 
-#spacing {
-    display: flex;
-    height: 150px;
-}
 
-/* Navigatiebalk en logo */
 .navbackground {
     z-index: 1;
     margin-top: -130px;
@@ -33,25 +28,25 @@ body {
     width: 100%;
 }
 
-.navbackground img {
+.navbackground img{
     width: 100%;
     height: 460px;
 }
 
-.see {
+.see{
     position: fixed;
     z-index: -1;
     width: auto;
-    height: auto;
+    height:auto;
     margin-top: -50px;
     transition: 0.5s;
 }
 
-.see.is-active {
-    display: none;
+.see.is-active{
+    display:none;
 }
 
-nav {
+nav{
     width: 100%;
     display: flex !important;
     position: fixed;
@@ -66,8 +61,7 @@ nav {
     transition: 0.5s;
 }
 
-.navbar.is-active {
-    background-color: black;
+.navbar.is-active{
     width: 100%;
     display: flex !important;
     position: fixed;
@@ -81,6 +75,8 @@ nav {
     padding-bottom: 10px;
     transition: 0.5s;
 }
+
+
 
 .logo {
     width: 400px;
@@ -89,11 +85,7 @@ nav {
     transition: 0.5s;
 }
 
-nav ul {
-    display: flex;
-}
-
-nav ul li {
+nav ul li{
     display: inline-block !important;
     list-style: none;
     margin: 10px 20px;
@@ -101,9 +93,9 @@ nav ul li {
     padding-left: 10px;
 }
 
-nav ul li a {
+nav ul li a{
     color: #A3B5C1;
-    text-decoration: none;
+    text-decoration: none;	
     font-size: 18px;
     transition: .3s;
     letter-spacing: 3px;
@@ -116,7 +108,6 @@ nav a.active {
     padding-bottom: 3px;
 }
 
-/* Hamburger menu */
 .hamburger {
     position: relative;
     display: none;
@@ -129,7 +120,7 @@ nav a.active {
     margin-top: -10px;
 }
 
-.hamburger .bar, .hamburger::after, .hamburger::before {
+.hamburger .bar, .hamburger::after, .hamburger::before{
     content: '';
     display: block;
     width: 100%;
@@ -147,17 +138,16 @@ nav a.active {
     transform: rotate(45deg) translate(-9px, -8px);
 }
 
-.hamburger.is-active .bar {
+.hamburger.is-active .bar{
     opacity: 0;
 }
 
-/* Mobiele navigatie */
+
 .navbarcheck {
     background-color: black;
     height: 100%;
     width: 100%;
     position: fixed;
-    top: 0;
     z-index: 1;
     display: none;
     align-items: center !important;
@@ -165,11 +155,11 @@ nav a.active {
     transition: 0.4s;
 }
 
-.navbarcheck.is-active {
+.navbarcheck.is-active{
     display: flex;
 }
 
-.navbarcheck ul {
+.navbarcheck ul{
     margin-top: 190px;
 }
 
@@ -198,7 +188,6 @@ nav a.active {
     padding-bottom: 3px;
   }
 
-/* Media queries */
 @media only screen and (max-width: 1048px) {
     nav ul {
         display: none;
@@ -208,6 +197,11 @@ nav a.active {
     }
 }
 
+#spacing {
+    display: flex;
+    height: 350px;
+    transition: .5s;
+}
 
 
 .testing{
@@ -222,6 +216,7 @@ nav a.active {
     margin-left: -170px;
     font-family: 'futurealight'!important;
     font-size: 24px;
+    padding: 5px;
     grid-row: 1;
 }
 
@@ -280,6 +275,7 @@ nav a.active {
 }
 .text1hide{
     display: none;
+    padding: 5px;
 }
 .text2hide{
     display: none;
@@ -398,7 +394,7 @@ a{
     .f2{
         width: 170px;
     }
-    .logo{
+    .logo {
         width: 80% !important;
     }
 }
@@ -441,6 +437,9 @@ a{
         font-size: 24px;
         font-family: 'futurealight'!important;
         text-align: right;
+    }
+    .header{
+        font-size: 20px;
     }
 }
 
