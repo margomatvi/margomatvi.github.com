@@ -361,6 +361,9 @@ a{
     .f2{
         width: 170px;
     }
+    .overlay{
+        display: none;
+    }
     .logo{
         width: 80% !important;
     }
